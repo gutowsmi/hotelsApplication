@@ -17,7 +17,7 @@ public class SwaggerConfiguration {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("michal.hotelsApplication"))
+                .apis(RequestHandlerSelectors.basePackage("gutowski.michal.hotelsApplication"))
                 .build()
                 .useDefaultResponseMessages(false)
                 .ignoredParameterTypes()
