@@ -4,7 +4,7 @@ public class PersonReservationDto {
     private String name;
     private String phone;
     private String address;
-    private String floor;
+    private Integer floor;
 
     public String getName() {
         return name;
@@ -30,21 +30,18 @@ public class PersonReservationDto {
         this.address = address;
     }
 
-    public String getFloor() {
+    public Integer getFloor() {
         return floor;
     }
 
-    public void setFloor(String floor) {
+    public void setFloor(Integer floor) {
         this.floor = floor;
     }
 
-    public PersonReservationDto(String name, String phone, String address, String floor) {
+    public PersonReservationDto(String name, String phone, String address, Integer floor) {
         this.name = name;
         this.phone = phone;
         this.address = address;
         this.floor = floor;
-    }
-
-    public PersonReservationDto() {
     }
 }
